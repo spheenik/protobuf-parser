@@ -1,6 +1,11 @@
 Protobuf Parser
 ===============
 
+NOTE
+----
+
+This fork provides a mavenized version of the original project.
+
 Overview
 --------
 
