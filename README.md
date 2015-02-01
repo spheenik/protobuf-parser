@@ -25,10 +25,9 @@ This project is inspired by [sirikata's ProtoJs project](https://github.com/siri
 Install
 -------
 
-    git clone git://github.com/yesme/protobuf-parser.git
+    git clone git://github.com/spheenik/protobuf-parser.git
     cd protobuf-parser
-    ./bootstrap.sh
-    make
+    mvn -P onejar package
 
 After that, a sample parser will be built.
 
@@ -39,10 +38,6 @@ This project includes 3 components:
 - <code>dsl</code>: Antlr grammar for Protocol Buffer
 - <code>protos</code>: Sample Proto files basically covered most of the (normal and) corner cases defining a Protocol Buffer file
 - <code>sampleparser</code>: A sample protobuf parser implementation
-
-Therefore <code>make</code> will
-1. build the DSL grammar into Java source code
-2. build <code>sampleparser</code> against the generated DSL source code
 
 For the one who wants to provide Protocol Buffer implementation, or provide Service implementation, please take a look at <code>sampleparser/SampleParser.java</code> - it's a sample shows how to use it.
 
@@ -55,4 +50,6 @@ In order to test the current parser, run the following commands.  It will transl
     make testparsersimple  # simply test if the parser works
     make testparserverbose # run the parser and print out the AST
 
-For any question, please feel free to mail jacky.chao.wang@gmail.com for more information.
+For any question regarding the parser, please feel free to mail jacky.chao.wang@gmail.com for more information.
+
+If you have problems with the maven build, please contact me.
